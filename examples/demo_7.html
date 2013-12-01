@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>WaltzerJS - Demo 7</title>
+	<meta name="description" content="WaltzerJS - jQuery Carousel Plugin by Scott Carmichael" />
+	<link type="text/css" href="css/styles.css" rel="stylesheet" />	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../waltzerjs.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			var counter = function(){
+				var currentPage = this.pageCount,
+					itemCount = this.itemCount,
+					scrollItems = this.options.scroll;
+				$('#counter').html(currentPage+' / '+(itemCount / scrollItems));
+				
+			}
+
+			$('#carousel').waltzer({
+								scroll:5,
+								auto: true,
+								autoPause: 10000,
+								onCreate: counter,
+								onComplete: counter
+							});
+
+		});
+
+	</script>
+
+</head>
+
+<body>
+
+<h1>WaltzerJS - Demo 7</h1>
+
+<h2>Auto scroll, scroll 5 with custom page counter.</h2>
+
+<div id="carousel" class='outerWrapper outerWrapper2'>
+	<div class="item">
+		<div>1</div>
+	</div>
+	<div class="item">
+		<div>2</div>
+	</div>
+	<div class="item">
+		<div>3</div>
+	</div>
+	<div class="item">
+		<div>4</div>
+	</div>
+	<div class="item">
+		<div>5</div>
+	</div>
+	<div class="item">
+		<div>6</div>
+	</div>
+	<div class="item">
+		<div>7</div>
+	</div>
+	<div class="item">
+		<div>8</div>
+	</div>
+	<div class="item">
+		<div>9</div>
+	</div>
+	<div class="item">
+		<div>10</div>
+	</div>
+	<div class="item">
+		<div>11</div>
+	</div>
+	<div class="item">
+		<div>12</div>
+	</div>
+	<div class="item">
+		<div>13</div>
+	</div>
+	<div class="item">
+		<div>14</div>
+	</div>
+	<div class="item">
+		<div>15</div>
+	</div>
+</div>
+
+<div id="counter"></div>
+
+<footer>
+			
+	&copy;2013 <a href="http://www.scottcarmichael.co.uk">Scott Carmichael</a>
+
+	|  
+
+	<a title="github" href="https://github.com/carmichaelize">github</a>  
+
+</footer>
+
+</body>
+</html>

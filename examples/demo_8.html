@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>WaltzerJS - Demo 8</title>
+	<meta name="description" content="WaltzerJS - jQuery Carousel Plugin by Scott Carmichael" />
+	<link type="text/css" href="css/styles.css" rel="stylesheet" />	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../waltzerjs.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			$('#carousel').waltzer({
+								scroll:4,
+								auto: true,
+								autoPause: 8000,
+							});
+
+			$('#control_btn').on('click', function(){
+				if($(this).text() == 'Start') {
+					$(this).text('Stop');
+					$('#carousel').waltzer('Stop');
+				} else if($(this).text() == 'Stop') {
+					$(this).text('Start');
+					$('#carousel').waltzer('Start');
+				}				
+			});
+
+		});
+
+	</script>
+
+</head>
+
+<body>
+
+<h1>WaltzerJS - Demo 8</h1>
+
+<h2>Auto scroll, scroll 5 with custom page counter.</h2>
+
+<div id="carousel" class='outerWrapper'>
+	<div class="item">
+		<div>1</div>
+	</div>
+	<div class="item">
+		<div>2</div>
+	</div>
+	<div class="item">
+		<div>3</div>
+	</div>
+	<div class="item">
+		<div>4</div>
+	</div>
+	<div class="item">
+		<div>5</div>
+	</div>
+	<div class="item">
+		<div>6</div>
+	</div>
+	<div class="item">
+		<div>7</div>
+	</div>
+	<div class="item">
+		<div>8</div>
+	</div>
+	<div class="item">
+		<div>9</div>
+	</div>
+	<div class="item">
+		<div>10</div>
+	</div>
+	<div class="item">
+		<div>11</div>
+	</div>
+	<div class="item">
+		<div>12</div>
+	</div>
+</div>
+
+<div id="counter">
+	<button id="control_btn">Stop</button>
+</div>
+
+<footer>
+			
+	&copy;2013 <a href="http://www.scottcarmichael.co.uk">Scott Carmichael</a>
+
+	| 
+
+	<a title="github" href="https://github.com/carmichaelize">github</a>  
+
+</footer>
+
+</body>
+</html>
