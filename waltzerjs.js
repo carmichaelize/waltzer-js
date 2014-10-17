@@ -3,10 +3,10 @@
 * Project: WaltzerJS
 * URL: http://www.waltzer-js.co.uk
 * Author: Scott Carmichael
-* Version: 1.0
+* Version: 1.1
 *
-* Copyright (c) 2013 Scott Carmichael
-* Daul Licensed under GPL(http://www.gnu.org/licenses/gpl.html) & MIT (http://www.opensource.org/licenses/mit-license.php)
+* Copyright (c) 2014 Scott Carmichael
+* Dual Licensed under GPL(http://www.gnu.org/licenses/gpl.html) & MIT (http://www.opensource.org/licenses/mit-license.php)
 *
 */
 
@@ -133,7 +133,7 @@
                         }
                     }
                 }
-                
+
                 //Update Pager Active State
                 if(this.options.pager){
                     this.$container.find('.pager').children('span').removeClass('active');
@@ -181,9 +181,8 @@
 
         plugin.prototype.actions = function(self){
 
-
             this.animate = function(direction, amount){
-                
+
                 //Return if Animation in Progress
                 if(this.innerWrapper.is(':animated')){
                     return false;
@@ -227,7 +226,7 @@
                     } else if(!this.options.circular) {
 
                         posObject[offset] = 0;
-                        
+
                         //Animate InnerWrapper
                         this.animateFunction(posObject, direction, amount);
 
@@ -356,7 +355,7 @@
                             self.move('backward', (newPage - currentPage) * -1);
                         }
                     }
-                    
+
                 });
 
             }

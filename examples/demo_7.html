@@ -4,34 +4,9 @@
 	<meta charset="utf-8">
 	<title>WaltzerJS - Demo 7</title>
 	<meta name="description" content="WaltzerJS - jQuery Carousel Plugin by Scott Carmichael" />
-	<link type="text/css" href="css/styles.css" rel="stylesheet" />	
+	<link type="text/css" href="css/styles.css" rel="stylesheet" />
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="../waltzerjs.js"></script>
-
-	<script type="text/javascript">
-
-		$(document).ready(function() {
-
-			var counter = function(){
-				var currentPage = this.pageCount,
-					itemCount = this.itemCount,
-					scrollItems = this.options.scroll;
-				$('#counter').html(currentPage+' / '+(itemCount / scrollItems));
-				
-			}
-
-			$('#carousel').waltzer({
-								scroll:5,
-								auto: true,
-								autoPause: 10000,
-								onCreate: counter,
-								onComplete: counter
-							});
-
-		});
-
-	</script>
-
+	<script type="text/javascript" src="../waltzerjs.min.js"></script>
 </head>
 
 <body>
@@ -91,14 +66,33 @@
 <div id="counter"></div>
 
 <footer>
-			
-	&copy;2013 <a href="http://www.scottcarmichael.co.uk">Scott Carmichael</a>
+
+	&copy;2014 <a href="http://www.scottcarmichael.co.uk">Scott Carmichael</a>
 
 	|  
 
-	<a title="github" href="https://github.com/carmichaelize">github</a>  
+	<a title="github" href="https://github.com/carmichaelize">github</a>
 
 </footer>
+
+<script>
+
+	var counter = function(){
+		var currentPage = this.pageCount,
+			itemCount = this.itemCount,
+			scrollItems = this.options.scroll;
+		$('#counter').html(currentPage+' / '+(itemCount / scrollItems));
+	}
+
+	$('#carousel').waltzer({
+						scroll:5,
+						auto: true,
+						autoPause: 10000,
+						onCreate: counter,
+						onComplete: counter
+					});
+
+</script>
 
 </body>
 </html>
