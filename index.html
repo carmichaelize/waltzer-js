@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WaltzerJS - jQuery Carousel Plugin</title>
+    <meta name="description" content="WaltzerJS - jQuery Carousel Plugin by Scott Carmichael" />
+    <meta name="keywords" content="WaltzerJS, jQuery, Carousel, Plugin, Scott Carmichael" />
+    <link href="./assets/css/stylesheet.css" rel="stylesheet" type="text/css" media="all"/>
+    
+    <link href="./examples/css/styles.css" rel="stylesheet" type="text/css" media="all"/>   
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="waltzerjs.js"></script>
+
+ <!-- Google font library -->
+ <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<h1>Waltzer<span>JS</span> - jQuery Carousel Plugin</h1>
+
+<br />
+
+<div class='outerWrapper' style="height:auto;">
+
+    <h2>What's The Idea?</h2>
+
+    <p>Carousel plugins are a pain to configure, a pain to skin and far too heavy so here's the beginings of my alternative.</p>
+    <a href="https://github.com/carmichaelize/waltzer-js" class="lobster">Docs and Download on Github</a>.
+
+</div>
+
+<h2>Example 1 <span>- Scroll 1</span></h2>
+
+<div id="carousel1" class='outerWrapper'>
+    <div class="item">
+        <div>1</div>
+    </div>
+    <div class="item">
+        <div>2</div>
+    </div>
+    <div class="item">
+        <div>3</div>
+    </div>
+    <div class="item">
+        <div>4</div>
+    </div>
+    <div class="item">
+        <div>5</div>
+    </div>
+    <div class="item">
+        <div>6</div>
+    </div>
+    <div class="item">
+        <div>7</div>
+    </div>
+    <div class="item">
+        <div>8</div>
+    </div>
+    <div class="item">
+        <div>9</div>
+    </div>
+    <div class="item">
+        <div>10</div>
+    </div>
+    <div class="item">
+        <div>11</div>
+    </div>
+    <div class="item">
+        <div>12</div>
+    </div>
+</div>
+
+<script>$('#carousel1').waltzer({scroll:1});</script>
+
+<!-- <h2>Example 1 <span>- Scroll 1</span></h2>
+<div id="outerWrapper" class='outerWrapper'>
+    <div class="leftNav"></div>
+        <div class="item">
+            <div>1</div>
+        </div>
+        <div class="item">
+            <div>2</div>
+        </div>
+        <div class="item">
+            <div>3</div>
+        </div>
+        <div class="item">
+            <div>4</div>
+        </div>
+        <div class="item">
+            <div>5</div>
+        </div>
+        <div class="item">
+            <div>6</div>
+        </div>
+        <div class="item">
+            <div>7</div>
+        </div>
+        <div class="item">
+            <div>8</div>
+        </div>
+        <div class="item">
+            <div>9</div>
+        </div>
+        <div class="item">
+            <div>10</div>
+        </div>
+        <div class="item">
+            <div>11</div>
+        </div>
+        <div class="item">
+            <div>12</div>
+        </div> 
+    <div class="rightNav"></div>
+</div> -->
+
+<!-- <h2>Example 2 <span>- Scroll 5, Start at Item 3</span></h2>
+<div id="outerWrapper2" class='outerWrapper'>
+    <div class="leftNav"></div>
+        <div class="item">
+            <div>1</div>
+        </div>
+        <div class="item">
+            <div>2</div>
+        </div>
+        <div class="item">
+            <div>3</div>
+        </div>
+        <div class="item">
+            <div>4</div>
+        </div>
+        <div class="item">
+            <div>5</div>
+        </div>
+        <div class="item">
+            <div>6</div>
+        </div>
+        <div class="item">
+            <div>7</div>
+        </div>
+        <div class="item">
+            <div>8</div>
+        </div>
+        <div class="item">
+            <div>9</div>
+        </div>
+        <div class="item">
+            <div>10</div>
+        </div>
+        <div class="item">
+            <div>11</div>
+        </div>
+        <div class="item">
+            <div>12</div>
+        </div>
+        <div class="item">
+            <div>13</div>
+        </div>
+        <div class="item">
+            <div>14</div>
+        </div>
+        <div class="item">
+            <div>15</div>
+        </div>
+    <div class="rightNav"></div>
+</div> -->
+
+<h2>Example 2 <span>- Scroll 5, start at item 3</span></h2>
+
+<div id="carousel2" class='outerWrapper outerWrapper2'>
+    <div class="item">
+        <div>1</div>
+    </div>
+    <div class="item">
+        <div>2</div>
+    </div>
+    <div class="item">
+        <div>3</div>
+    </div>
+    <div class="item">
+        <div>4</div>
+    </div>
+    <div class="item">
+        <div>5</div>
+    </div>
+    <div class="item">
+        <div>6</div>
+    </div>
+    <div class="item">
+        <div>7</div>
+    </div>
+    <div class="item">
+        <div>8</div>
+    </div>
+    <div class="item">
+        <div>9</div>
+    </div>
+    <div class="item">
+        <div>10</div>
+    </div>
+    <div class="item">
+        <div>11</div>
+    </div>
+    <div class="item">
+        <div>12</div>
+    </div>
+    <div class="item">
+        <div>13</div>
+    </div>
+    <div class="item">
+        <div>14</div>
+    </div>
+    <div class="item">
+        <div>15</div>
+    </div>
+</div>
+
+<script>
+    $('#carousel2').waltzer({
+        auto:true,
+        autoPause: 5000,
+        scroll:5,
+        offset:2
+    });
+</script>
+
+<h2>Example 3 <span>- Scroll 4, non-circular</span></h2>
+
+<div id="carousel3" class='outerWrapper'>
+    <div class="item">
+        <div>1</div>
+    </div>
+    <div class="item">
+        <div>2</div>
+    </div>
+    <div class="item">
+        <div>3</div>
+    </div>
+    <div class="item">
+        <div>4</div>
+    </div>
+    <div class="item">
+        <div>5</div>
+    </div>
+    <div class="item">
+        <div>6</div>
+    </div>
+    <div class="item">
+        <div>7</div>
+    </div>
+    <div class="item">
+        <div>8</div>
+    </div>
+    <div class="item">
+        <div>9</div>
+    </div>
+    <div class="item">
+        <div>10</div>
+    </div>
+    <div class="item">
+        <div>11</div>
+    </div>
+    <div class="item">
+        <div>12</div>
+    </div>
+</div>
+
+<script>
+    $('#carousel3').waltzer({
+        scroll:4,
+        circular:false
+    });
+</script>
+
+<h2>Example 4 <span>- Scroll 4 with pager</span></h2>
+
+<div id="carousel4" class='outerWrapper'>
+    <div class="item">
+        <div>1</div>
+    </div>
+    <div class="item">
+        <div>2</div>
+    </div>
+    <div class="item">
+        <div>3</div>
+    </div>
+    <div class="item">
+        <div>4</div>
+    </div>
+    <div class="item">
+        <div>5</div>
+    </div>
+    <div class="item">
+        <div>6</div>
+    </div>
+    <div class="item">
+        <div>7</div>
+    </div>
+    <div class="item">
+        <div>8</div>
+    </div>
+    <div class="item">
+        <div>9</div>
+    </div>
+    <div class="item">
+        <div>10</div>
+    </div>
+    <div class="item">
+        <div>11</div>
+    </div>
+    <div class="item">
+        <div>12</div>
+    </div>
+</div>
+
+<script>
+    $('#carousel4').waltzer({
+        scroll:4,
+        navBtns: false,
+        pager:true
+    });
+</script>
+
+<h2>Example 5 <span>- Scroll 1, vertical and non-circular</span></h2>
+
+<div id="carousel5" class='outerWrapper vert'>
+    <div class="item">
+        <div>1</div>
+    </div>
+    <div class="item">
+        <div>2</div>
+    </div>
+    <div class="item">
+        <div>3</div>
+    </div>
+    <div class="item">
+        <div>4</div>
+    </div>
+    <div class="item">
+        <div>5</div>
+    </div>
+    <div class="item">
+        <div>6</div>
+    </div>
+    <div class="item">
+        <div>7</div>
+    </div>
+</div>
+
+<script>
+    $('#carousel5').waltzer({
+        scroll:1,
+        vertical:true,
+        circular:false,
+        speed:500,
+        left_nav_btn:'.topNav',
+        right_nav_btn:'.botNav'
+    });
+</script>
+
+<h2>Example 6 <span>- Scroll 2, vertical</span></h2>
+
+<div id="carousel6" class='outerWrapper vert'>
+    <div class="item">
+        <div>1</div>
+    </div>
+    <div class="item">
+        <div>2</div>
+    </div>
+    <div class="item">
+        <div>3</div>
+    </div>
+    <div class="item">
+        <div>4</div>
+    </div>
+    <div class="item">
+        <div>5</div>
+    </div>
+    <div class="item">
+        <div>6</div>
+    </div>
+</div>
+
+<script>
+    $('#carousel6').waltzer({
+        scroll:2,
+        vertical:true,
+        speed:500,
+        left_nav_btn:'.topNav',
+        right_nav_btn:'.botNav'
+    });
+</script>
+
+<h2>Example 7 <span>- Auto scroll, scroll 5 with custom page counter</span></h2>
+
+<div id="carousel7" class='outerWrapper outerWrapper2'>
+    <div class="item">
+        <div>1</div>
+    </div>
+    <div class="item">
+        <div>2</div>
+    </div>
+    <div class="item">
+        <div>3</div>
+    </div>
+    <div class="item">
+        <div>4</div>
+    </div>
+    <div class="item">
+        <div>5</div>
+    </div>
+    <div class="item">
+        <div>6</div>
+    </div>
+    <div class="item">
+        <div>7</div>
+    </div>
+    <div class="item">
+        <div>8</div>
+    </div>
+    <div class="item">
+        <div>9</div>
+    </div>
+    <div class="item">
+        <div>10</div>
+    </div>
+    <div class="item">
+        <div>11</div>
+    </div>
+    <div class="item">
+        <div>12</div>
+    </div>
+    <div class="item">
+        <div>13</div>
+    </div>
+    <div class="item">
+        <div>14</div>
+    </div>
+    <div class="item">
+        <div>15</div>
+    </div>
+</div>
+
+<div id="counter7"></div>
+
+<script>
+    var counter = function(){
+        var currentPage = this.pageCount,
+            itemCount = this.itemCount,
+            scrollItems = this.options.scroll;
+        $('#counter7').html(currentPage+' / '+(itemCount / scrollItems));
+    }
+
+    $('#carousel7').waltzer({
+        scroll:5,
+        auto: true,
+        autoPause: 10000,
+        onCreate: counter,
+        onComplete: counter
+    });
+</script>
+
+<h2>Example 8 <span>- Auto scroll, scroll 5 with custom page counter</span></h2>
+
+<div id="carousel8" class='outerWrapper'>
+    <div class="item">
+        <div>1</div>
+    </div>
+    <div class="item">
+        <div>2</div>
+    </div>
+    <div class="item">
+        <div>3</div>
+    </div>
+    <div class="item">
+        <div>4</div>
+    </div>
+    <div class="item">
+        <div>5</div>
+    </div>
+    <div class="item">
+        <div>6</div>
+    </div>
+    <div class="item">
+        <div>7</div>
+    </div>
+    <div class="item">
+        <div>8</div>
+    </div>
+    <div class="item">
+        <div>9</div>
+    </div>
+    <div class="item">
+        <div>10</div>
+    </div>
+    <div class="item">
+        <div>11</div>
+    </div>
+    <div class="item">
+        <div>12</div>
+    </div>
+</div>
+
+<div id="counter8">
+    <button id="control_btn8">Stop</button>
+</div>
+
+<script>
+    $('#carousel8').waltzer({
+        scroll:4,
+        auto: true,
+        autoPause: 8000,
+    });
+
+    $('#control_btn8').on('click', function(){
+        if($(this).text() == 'Start') {
+            $(this).text('Stop');
+            $('#carousel8').waltzer('Stop');
+        } else if($(this).text() == 'Stop') {
+            $(this).text('Start');
+            $('#carousel8').waltzer('Start');
+        }
+    });
+</script>
+
+<footer>
+    All content &copy; <a href="http://www.scottcarmichael.co.uk">Scott Carmichael</a>
+
+    | 
+    
+    <a title="Twitter" href="https://twitter.com/carmichaelize">Twitter</a>
+
+    | 
+
+    <a title="github" href="https://github.com/carmichaelize">github</a>  
+</footer>
+
+</body>
+</html>

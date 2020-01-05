@@ -1,6 +1,6 @@
-#WaltzerJS
+# WaltzerJS
 
-[WaltzerJS](http://www.waltzer-js.co.uk) is a lightweight, easy to skin carousel plugin for jQuery. It includes a range of configurable options making it suitable for a variety purposes. Features include the ability to:
+[WaltzerJS](http://carmichaelize.github.io/waltzer-js) is a lightweight, easy to skin carousel plugin for jQuery. It includes a range of configurable options making it suitable for a variety purposes. Features include the ability to:
 
 * Choose scrolling orientation (horizontal or vertical).
 * Specify a transition speed.
@@ -13,11 +13,11 @@
 * Further customise the plugin, through the provided method and event API.
 * Internet Explorer 7, 8, 9 compatible.
 
-##Documentation
+## Documentation
 
-WaltzerJS has a range of configurable options to define how the plugin will function when initialised. In addition there is also a number of methods and events that can be used to develop the plugin (and its functionality) further. Further documentation and examples can be found at [www.waltzer-js.co.uk](http://www.waltzer-js.co.uk).
+WaltzerJS has a range of configurable options to define how the plugin will function when initialised. In addition there is also a number of methods and events that can be used to develop the plugin (and its functionality) further. Further documentation and examples can be found at [https://github.com/carmichaelize/waltzer-js](https://github.com/carmichaelize/waltzer-js).
  
-###Usage
+### Usage
 
     $('#carousel').waltzer();
 
@@ -34,7 +34,7 @@ Markup structure is relatively straight forward. Carousel items need to be neste
 
 Keep in mind WaltzerJS core styling may be affected by any custom CSS included. Refer to the examples if you encounter any styling based functionality issues.
 
-###Options
+### Options
 **speed** *(integer)*
 
 Time to complete each transition.
@@ -137,7 +137,7 @@ Logs the WaltzerJS instance as an object to the developer console. Contains vari
 
 Default: *false*
 
-###Methods
+### Methods
 
 WaltzerJS has a number of methods that can be used to control the behavior of a carousel after the instance has been created.
 
@@ -171,7 +171,7 @@ Removes all carousel functionality, returns the element back to its pre-waltzer 
 
 	$('#carousel').waltzer('destroy');
 
-###Events
+### Events
 
 In addition to providing the ability to pass event callbacks, WaltzerJS also triggers a number of events during and after certain carousel actions. Event listeners can be set up to target these using jQuery's [on() function](http://api.jquery.com/on/).
 
@@ -199,19 +199,19 @@ This event is triggered as the carousel moves (in either direction).
 
 This event is triggered after the carousel moves (in either direction).
 
-##Examples
+## Examples
 
 Below is a collection of examples demonstrating basic and advanced usage of WaltzerJS. For further reference, consult the demo files that come bundled with the plugin download.
 
-###Demo 1
+### Demo 1
 
-Scroll 1. [View Demo](http://www.carmichaelize.co.uk/examples/waltzerjs/examples/demo_1.html)
+Scroll 1. [View Demo](http://carmichaelize.github.io/waltzer-js/examples/demo_1.html)
 
     $('#carousel').waltzer();
 
-###Demo 2
+### Demo 2
 
-Auto scroll 5, start at item 3. [View Demo](http://www.carmichaelize.co.uk/examples/waltzerjs/examples/demo_2.html)
+Auto scroll 5, start at item 3. [View Demo](http://carmichaelize.github.io/waltzer-js/examples/demo_2.html)
 
     $('#carousel').waltzer({
 	    auto:true,
@@ -219,18 +219,18 @@ Auto scroll 5, start at item 3. [View Demo](http://www.carmichaelize.co.uk/examp
 	    offset:2
     });
 
-###Demo 3
+### Demo 3
 
-Scroll 4, non-circular. [View Demo](http://www.carmichaelize.co.uk/examples/waltzerjs/examples/demo_3.html)
+Scroll 4, non-circular. [View Demo](http://carmichaelize.github.io/waltzer-js/examples/demo_3.html)
 
     $('#carousel').waltzer({
 	    scroll:4,
 	    circular:false
     });
 
-###Demo 4
+### Demo 4
 
-Scroll 4 with pager. [View Demo](http://www.carmichaelize.co.uk/examples/waltzerjs/examples/demo_4.html)
+Scroll 4 with pager. [View Demo](http://carmichaelize.github.io/waltzer-js/examples/demo_4.html)
 
     $('#carousel').waltzer({
 	    scroll:4,
@@ -238,9 +238,9 @@ Scroll 4 with pager. [View Demo](http://www.carmichaelize.co.uk/examples/waltzer
 	    navBtns:false
     });
 
-###Demo 5
+### Demo 5
 
-Scroll 1, vertical, non-circular. [View Demo](http://www.carmichaelize.co.uk/examples/waltzerjs/examples/demo_5.html)
+Scroll 1, vertical, non-circular. [View Demo](http://carmichaelize.github.io/waltzer-js/examples/demo_5.html)
 
     $('#carousel').waltzer({
 	    vertical:true,
@@ -248,9 +248,9 @@ Scroll 1, vertical, non-circular. [View Demo](http://www.carmichaelize.co.uk/exa
 	    speed:500
     });
 
-###Demo 6
+### Demo 6
 
-Scroll 2, vertical, specified navigation buttons. [View Demo](http://www.carmichaelize.co.uk/examples/waltzerjs/examples/demo_6.html)
+Scroll 2, vertical, specified navigation buttons. [View Demo](http://carmichaelize.github.io/waltzer-js/examples/demo_6.html)
 
     $('#carousel').waltzer({
 	    scroll:2,
@@ -260,9 +260,9 @@ Scroll 2, vertical, specified navigation buttons. [View Demo](http://www.carmich
 	    right_nav_btn:'botNav'
     });
 
-###Demo 7
+### Demo 7
 
-Auto scroll 5 with custom page counter. [View Demo](http://www.carmichaelize.co.uk/examples/waltzerjs/examples/demo_7.html)
+Auto scroll 5 with custom page counter. [View Demo](http://carmichaelize.github.io/waltzer-js/examples/demo_7.html)
 
     var counter = function(){
 	    var currentPage = this.pageCount,
@@ -279,9 +279,9 @@ Auto scroll 5 with custom page counter. [View Demo](http://www.carmichaelize.co.
 	    onComplete: counter
     });
 
-###Demo 8
+### Demo 8
 
-Auto scroll 4 with custom stop / start button. [View Demo](http://www.carmichaelize.co.uk/examples/waltzerjs/examples/demo_8.html)
+Auto scroll 4 with custom stop / start button. [View Demo](http://carmichaelize.github.io/waltzer-js/examples/demo_8.html)
 
     $('#carousel').waltzer({
 	    scroll:4,
@@ -299,6 +299,6 @@ Auto scroll 4 with custom stop / start button. [View Demo](http://www.carmichael
 	    }	
     });
 
-##Licence
+## Licence
 
 (Dual) [GPL](http://www.gnu.org/licenses/gpl.html) & [MIT](http://opensource.org/licenses/MIT)

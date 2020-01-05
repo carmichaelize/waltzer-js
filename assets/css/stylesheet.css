@@ -1,0 +1,92 @@
+@import "carmichaelize.css";
+
+body {
+    text-align:center;
+    background:url('../images/bg.jpg');
+    background-position:top left;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    font-size:1.7em;
+    font-family: 'Cabin', Helvetica, Arial, sans-serif;
+}
+
+h1, h2{
+    font-family: 'Lobster', Georgia, Times, serif;
+    margin:0;
+}
+
+h1{
+    font-size: 100px;
+    color:#AF0317;
+    text-shadow: 1px 1px 1px #000;
+}
+
+h2{
+    font-size: 30px;
+    color:#AF0317;
+    text-shadow: 0px 1px 1px #000;
+}
+p {
+    line-height:1.6em;
+}
+
+p a {
+    font-family: 'Lobster', Georgia, Times, serif;
+    font-size:1.3em;
+}
+
+#wrapper {
+    position:relative;
+    width:800px;
+    margin:0 auto;
+    max-width:1200px;
+}
+
+.social {
+    padding:10px;
+    width:45px;
+}
+
+body{
+    margin:0 60px;
+}
+
+h1 {
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+h1 span {
+    color:#000;
+}
+
+h2 {
+    text-align: left;
+    margin:0 auto 20px auto;
+    width:960px;
+}
+
+h2 span {
+    color:#000;
+    font-size:20px;
+}
+
+pre {
+    font-size:14px;
+    border:1px solid #000;
+    padding:12px;
+    background:#D6D6D6;
+}
+
+pre span{
+    color:#AF0317;
+    }
+
+footer {
+    text-align: center;
+    padding:0 0 20px 0;
+}
+
+footer a, .lobster {
+    font-family: 'Lobster', Georgia, Times, serif;
+}

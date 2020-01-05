@@ -1,0 +1,390 @@
+/* CARMICHAELIZE.CSS - VERSION 1.0 - https://github.com/scottyc1000/carmichaelize.css - I'LL DECIDE WHAT THE BROWSER RENDERS!!!
+===============================================================================================================================================
+
+This reset is a collection (and extension) of commonly used methods found in other css resets such as:
+
+# Eric Meyer - (http://meyerweb.com/eric/tools/css/reset/)
+
+# Normalize - (http://necolas.github.com/normalize.css/)
+
+# HTML5 Doctor - (http://html5doctor.com/html-5-reset-stylesheet/)
+
+Techniques have been dropped, mashed, altered and added to by myself to create a more relevant method of showing the browser whose boss.
+
+I have used a 'rounded' method for setting font sizes here, by default the browser is reset to 10px. (http://css-tricks.com/css-font-size/)
+
+I created CARMICHAELIZE.CSS because I'm frustrated with having to extend existing resets with the specifics of the way I work.
+
+It hasn’t of yet been tested on a full build by myself and may still contain underlying issues, yet to be addressed.
+
+Scott Carmichael - http://www.scottcarmichael.co.uk/
+
+=============================================================================================================================================*/
+
+
+/* Main Element Reset
+=========================================================================================================================*/
+
+/* Fixes main reset issues on most tags */
+
+html, body, div, span, article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary, applet, object, iframe, img,
+audio, canvas, video, dl, dt, dd, ol, ul, li, figure, form, fieldset, legend, label, table, caption, tbody, tfoot,
+thead, tr, th, td, p, pre, a, abbr, acronym, address, big, small, cite, code, q, blockquote, strike, del, b, strong, i, em, sub, sup,
+h1, h2, h3, h4, h5, h6 {
+    background: none;
+    border: none;
+    outline:none;
+    vertical-align: baseline;
+}
+
+html, body, div, article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary, applet, object, iframe,
+audio, canvas, video, dl, dt, dd, ol, ul, li, figure, form, fieldset, legend, table, caption, tbody, tfoot,thead, tr, th, td, 
+p, pre, q, blockquote, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Used mainly for horizon hack (likely to be dropped) */
+html, body {
+    min-height:100%;
+}
+
+/* Prevents iOS text size adjust after orientation change, without disabling user zoom (www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/) */
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size:62.5%; /* Reset for multiples of 10px */
+}
+
+/* HTML5 Resets & Fixes  
+=========================================================================================================================*/
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+    display: block;
+}
+
+/* Links & Anchors
+=========================================================================================================================*/
+
+a { 
+    color:#000;
+    text-decoration:none;
+    outline:none;
+}
+
+/* Heading Tags  
+=========================================================================================================================*/
+
+/* Resets all margin and padding values & Sets suitable pixels size hierarchy */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom:10px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.4em;
+}
+
+h6 {
+    font-size: 1.4em;
+}
+
+/* Text Formatting   
+=========================================================================================================================*/
+
+p, pre{
+    margin-bottom:15px;
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Addresses style set to 'bolder' in FF3+, S4/5, Chrome */
+
+b, strong {
+    font-weight: bold;
+}
+
+i, em, cite {
+    font-style: italic;
+}
+
+big {
+     font-size: 1.6em;
+}
+
+small {
+    font-size: 1.2em;
+}
+
+/* Addresses styling not present in IE7/8/9, S5, Chrome */
+
+abbr[title], acronym {
+    border-bottom: 1px dotted;
+}
+
+/* Addresses styling not present in IE6/7/8/9 */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+del, strike {
+    text-decoration: line-through;
+}
+
+/* Corrects font family set oddly in IE6, S4/5, Chrome (en.wikipedia.org/wiki/User:Davidgothberg/Test59) */
+
+pre, code, .codeBlock {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+}
+
+/* Improves readability of pre-formatted text in all browsers */
+
+blockquote {
+    margin:0 30px 15px 30px;
+}
+
+/* Addresses CSS quotes not supported in IE6/7 & Addresses quote property not supported in S4 */
+
+blockquote, q {
+    quotes: none;
+    font-style:italic;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '"';
+}
+
+/* For use with resource reference or date suffix etc... */
+
+sub, sup {
+    font-size: 1.1em;
+    line-height: 0;
+    position: relative;
+}
+
+sup {
+    top: -5px;
+}
+
+sub {
+    bottom: -2px;
+}
+
+/* Lists  & Organisation
+=========================================================================================================================*/
+
+/* Primarily for use in content */
+
+ul, ol, dl {
+    list-style-image: none;
+    list-style-position:inside;
+    padding-left:30px;
+    margin-bottom:15px;
+}
+
+ul {
+   list-style-type:disc;  
+}
+
+ol {
+   list-style-type:decimal;  
+}
+
+nav ul, nav ol {
+    list-style-type: none;
+    list-style-image: none;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:none;
+    border-top:1px solid #888;
+    margin:15px 0;
+    padding:0;
+}
+
+/* Form Resets & Fixes 
+=========================================================================================================================*/
+
+fieldset {
+    border: 1px solid #000;
+    padding:15px;
+}
+
+/* Corrects text not wrapping in FF3 & alignment displayed oddly in IE6/7 */
+
+legend {
+    white-space: normal;
+    *margin-left: -7px;
+}
+
+/* Improves appearance and consistency in all browsers. Will affect browser validation and highlighting. */
+ 
+button, input, select, textarea {
+    font-family: sans-serif;
+    *vertical-align: middle;
+    outline:none;
+}
+
+/* Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet */
+
+button, input {
+    line-height: normal;
+}
+
+/* Removes default vertical scrollbar in IE6/7/8/9, Improves readability and alignment in all browsers, Removes the possibility of any needless 'user resizing'*/
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize:none;
+}
+
+/* Corrects inability to style clickable 'input' types in iOS & Removes inner spacing in IE7 without affecting normal text inputs (Known issue: inner spacing remains in IE6) */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+    *overflow: visible;
+}
+
+/* Re-set default cursor for disabled elements */
+
+button[disabled], input[disabled] {
+    cursor: default;
+}
+
+/* Addresses box sizing set to content-box in IE8/9 & Removes excess padding in IE7/8/9 (Known issue: excess padding remains in IE6) */
+
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+    *height: 13px;
+    *width: 13px;
+}
+
+/* Addresses appearance set to searchfield in S5, Chrome Addresses & box-sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/* Removes inner padding and search cancel button in S5, Chrome on OS X */
+
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+/* Removes inner padding and border in FF3+ (www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons) */
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: none;
+    padding: 0;
+}
+
+/* Embedded / Rich Media & Content  
+=========================================================================================================================*/
+
+/* Corrects inline-block display not defined in IE6/7/8/9 & FF3 */
+
+audio, canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/* Prevents modern browsers from displaying 'audio' without controls & Remove excess height in iOS5 devices */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/* Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4 (Known issue: no IE6 support) */
+
+[hidden] {
+    display: none;
+}
+
+/* Improves image quality when scaled in IE7 (code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/) */
+
+img {
+    -ms-interpolation-mode: bicubic;
+}
+
+/* Corrects overflow displayed oddly in IE9 */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Tables  
+=========================================================================================================================*/
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td {
+    vertical-align:top;
+}
+
+/* Hooking Classes  
+=========================================================================================================================*/
+
+.clear, .clearall {
+    clear:both;
+}
+
+.alignleft {
+    float:left;
+}
+
+.alignright {
+    float:right;
+}
+
+.displayHide {
+    display:none;
+}
+
+.displayShow {
+    display:block;
+}
+
+.invisible {
+    visibility:hidden;
+}
+
+.visible {
+    visibility:visible;
+}
